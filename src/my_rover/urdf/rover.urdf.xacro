@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find my_rover)/urdf/ros2_control.xacro"/>
+  <xacro:include filename="$(find my_rover)/urdf/rover_base.xacro"/>
+  <xacro:ros2_control/>
+  <xacro:rover_base/>
+</robot>
