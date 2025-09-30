@@ -1,7 +1,51 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:include filename="$(find my_rover)/urdf/ros2_control.xacro"/>
-  <xacro:include filename="$(find my_rover)/urdf/rover_base.xacro"/>
-  <xacro:ros2_control/>
-  <xacro:rover_base/>
+<robot name="my_rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find my_rover)/urdf/wheel_macro.xacro"/>
+    <xacro:include filename="$(find my_rover)/urdf/ros2_control.xacro"/>
+    
+    <!-- Base link -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.5 0.3 0.1"/>
+            </geometry>
+            <origin xyz="0 0 0.1"/>  <!-- visual location -->
+            <material name="blue">
+                <color rgba="0 0 0.8 1"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.5 0.3 0.1"/>
+            </geometry>
+            <origin xyz="0 0 0.1"/>  <!-- collision box -->
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0.1"/>  <!-- center of mass -->
+            <mass value="10.0"/>
+            <inertia ixx="0.1" iyy="0.1" izz="0.1" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+    
+    <!-- Rear Wheels (driven) - at ground level (z=0) -->
+    <xacro:wheel_macro prefix="left_rear" parent="base_link" xyz="-0.2 0.17 0"/>
+    <xacro:wheel_macro prefix="right_rear" parent="base_link" xyz="-0.2 -0.17 0"/>
+    
+    <!-- Front Wheels (passive/caster) -->
+    <xacro:wheel_macro prefix="left_front" parent="base_link" xyz="0.2 0.17 0"/>
+    <xacro:wheel_macro prefix="right_front" parent="base_link" xyz="0.2 -0.17 0"/>
+    
+    <!-- Gazebo friction settings -->
+    <gazebo reference="base_link">
+      <mu1>0.05</mu1>  <!-- TODO FIX THIS -->
+      <mu2>0.05</mu2>
+      <material>Gazebo/Blue</material>
+    </gazebo>
+    
+    <!-- Gazebo plugin -->
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find my_rover)/config/rover_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
 </robot>

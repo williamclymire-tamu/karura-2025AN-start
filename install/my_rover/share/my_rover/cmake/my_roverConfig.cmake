@@ -1,1 +1,0 @@
-/home/william/karura-2025/ros2_ws/build/my_rover/ament_cmake_core/my_roverConfig.cmake
