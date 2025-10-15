@@ -1,23 +1,20 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>my_rover</name>
-  <version>0.0.1</version>
-  <description>My custom rover robot for Gazebo + ros2_control</description>
+  <version>0.1.0</version>
+  <description>My ROS2 rover simulation package</description>
 
-  <maintainer email="you@example.com">Your Name</maintainer>
+  <maintainer email="you@example.com">William</maintainer>
   <license>Apache-2.0</license>
 
-  <!-- Build tool -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <!-- Runtime dependencies -->
-  <exec_depend>xacro</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>controller_manager</exec_depend>
-  <exec_depend>diff_drive_controller</exec_depend>
-  <exec_depend>joint_state_broadcaster</exec_depend>
-  <exec_depend>gazebo_ros</exec_depend>
-  <exec_depend>gazebo_ros2_control</exec_depend>
+  <depend>rclcpp</depend>
+  <depend>xacro</depend>
+  <depend>gazebo_ros</depend>
+  <depend>ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>robot_state_publisher</depend>
 
   <export>
     <build_type>ament_cmake</build_type>

@@ -1,0 +1,13 @@
+
+rm -rf build/ install/ log/
+
+colcon build
+
+ros2 launch my_rover spawn_rover.launch.py
+
+/////////////////////////////////////////////
+ros2 control list_hardware_interfaces
+    -lists all command and state interfaces 
+
+ros2 control list_controllers
+    -lists all controllers 
