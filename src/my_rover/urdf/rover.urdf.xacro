@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <robot name="rover" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- Include wheel macro -->
   <xacro:include filename="$(find my_rover)/urdf/wheel_macro.xacro"/>
 
   <!-- Base body -->
@@ -9,10 +8,12 @@
     <visual>
       <geometry><box size="0.457 0.457 0.1"/></geometry>
       <origin xyz="0 0 0.15"/>
-      <material name="red"><color rgba="0.8 0.0 0.0 1.0"/></material>
+      <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+      </material>
     </visual>
     <collision>
-      <geometry><box size="0.35 0.3 0.1"/></geometry>
+      <geometry><box size="0.457 0.457 0.1"/></geometry>
       <origin xyz="0 0 0.15"/>
     </collision>
     <inertial>
@@ -24,13 +25,15 @@
   </link>
 
   <!-- Wheels -->
-  <xacro:wheel_macro prefix="left_rear"  parent="base_link" xyz="-0.15  0.19  0.05" friction="1.5"/>
-  <xacro:wheel_macro prefix="right_rear" parent="base_link" xyz="-0.15 -0.19  0.05" friction="1.5"/>
-  <xacro:wheel_macro prefix="left_front" parent="base_link" xyz="0.15  0.19  0.05" friction="0.5"/>
-  <xacro:wheel_macro prefix="right_front" parent="base_link" xyz="0.15 -0.19  0.05" friction="0.5"/>
+  <xacro:wheel_macro prefix="left_rear"  parent="base_link" xyz="-0.15  0.19  0.05" friction="10.0"/>
+  <xacro:wheel_macro prefix="right_rear" parent="base_link" xyz="-0.15 -0.19  0.05" friction="10.0"/>
+  <xacro:wheel_macro prefix="left_front" parent="base_link" xyz="0.15  0.19  0.05" friction="1.5"/>
+  <xacro:wheel_macro prefix="right_front" parent="base_link" xyz="0.15 -0.19  0.05" friction="1.5"/>
 
+  <!-- Gazebo base properties -->
   <gazebo reference="base_link">
-    <mu1>10.0</mu1><mu2>10.0</mu2>
+    <mu1>10.0</mu1>
+    <mu2>10.0</mu2>
     <material>Gazebo/Red</material>
   </gazebo>
 
@@ -52,29 +55,6 @@
       <state_interface name="velocity"/>
     </joint>
   </ros2_control>
-
-  <!-- Transmissions -->
-  <transmission name="left_rear_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="left_rear_wheel_joint">
-      <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
-    </joint>
-    <actuator name="left_rear_motor">
-      <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="right_rear_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="right_rear_wheel_joint">
-      <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
-    </joint>
-    <actuator name="right_rear_motor">
-      <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
 
   <!-- Gazebo ROS2 Control Plugin -->
   <gazebo>

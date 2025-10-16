@@ -9,19 +9,25 @@ from launch_ros.parameter_descriptions import ParameterValue
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
+    # URDF file
     xacro_file = PathJoinSubstitution([
         FindPackageShare('my_rover'),
         'urdf',
         'rover.urdf.xacro'
     ])
+
+    # Controllers YAML
     robot_controllers = PathJoinSubstitution([
         FindPackageShare('my_rover'),
         'config',
         'rover_controllers.yaml'
     ])
 
-    robot_description_content = ParameterValue(Command(['xacro ', xacro_file]), value_type=str)
+    robot_description_content = ParameterValue(
+        Command(['xacro ', xacro_file]), value_type=str
+    )
 
+    # Robot state publisher
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -32,6 +38,7 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Gazebo server/client
     gzserver_proc = ExecuteProcess(
         cmd=['gzserver', '--verbose', '-s', 'libgazebo_ros_factory.so'],
         output='screen'
@@ -39,6 +46,7 @@ def generate_launch_description():
 
     gzclient_proc = ExecuteProcess(cmd=['gzclient'], output='screen')
 
+    # Spawn rover
     spawn_rover = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -46,6 +54,7 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Controllers
     joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner',

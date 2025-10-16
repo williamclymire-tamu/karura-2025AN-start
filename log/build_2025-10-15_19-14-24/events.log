@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000167] (my_rover) JobQueued: {'identifier': 'my_rover', 'dependencies': OrderedDict()}
+[0.000459] (my_rover) JobStarted: {'identifier': 'my_rover'}
+[0.005210] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'cmake'}
+[0.005509] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '/home/william/karura-2025/ros2_ws/src/my_rover', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/william/karura-2025/ros2_ws/install/my_rover'], 'cwd': '/home/william/karura-2025/ros2_ws/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'william'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/william'), ('OLDPWD', '/home/william/karura-2025/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1841'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'william'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'william'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/william-Alienware-Aurora-Ryzen-Edition-R14:@/tmp/.ICE-unix/1818,unix/william-Alienware-Aurora-Ryzen-Edition-R14:/tmp/.ICE-unix/1818'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac78ca05_a13c_4a72_b005_007ecc7f0359'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/william/karura-2025/ros2_ws/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble')]), 'shell': False}
+[0.053135] (my_rover) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.095686] (my_rover) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099890] (-) TimerEvent: {}
+[0.100540] (my_rover) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.154622] (my_rover) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.159224] (my_rover) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.159396] (my_rover) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.159648] (my_rover) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.161605] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199984] (-) TimerEvent: {}
+[0.217154] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.221900] (my_rover) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.222089] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.222374] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.223849] (my_rover) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300073] (-) TimerEvent: {}
+[0.324422] (my_rover) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.362388] (my_rover) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.379182] (my_rover) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400146] (-) TimerEvent: {}
+[0.405231] (my_rover) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.408319] (my_rover) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.413443] (my_rover) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.420912] (my_rover) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.431050] (my_rover) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.458644] (my_rover) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.460224] (my_rover) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500235] (-) TimerEvent: {}
+[0.527764] (my_rover) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.546255] (my_rover) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.574315] (my_rover) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.579312] (my_rover) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.600324] (-) TimerEvent: {}
+[0.651074] (my_rover) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.651371] (my_rover) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700401] (-) TimerEvent: {}
+[0.717117] (my_rover) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.717858] (my_rover) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.749860] (my_rover) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.750822] (my_rover) StdoutLine: {'line': b'-- Found ros2_control: 2.52.0 (/opt/ros/humble/share/ros2_control/cmake)\n'}
+[0.751689] (my_rover) StdoutLine: {'line': b'-- Found controller_manager: 2.52.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[0.800463] (-) TimerEvent: {}
+[0.870112] (my_rover) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.877095] (my_rover) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.878014] (my_rover) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[0.887837] (my_rover) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[0.900543] (-) TimerEvent: {}
+[0.972775] (my_rover) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.000591] (-) TimerEvent: {}
+[1.014924] (my_rover) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.026958] (my_rover) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.044152] (my_rover) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.053729] (my_rover) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.056944] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.060566] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.061161] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.061429] (my_rover) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.065005] (my_rover) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.074944] (my_rover) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.100670] (-) TimerEvent: {}
+[1.104300] (my_rover) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.108370] (my_rover) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.114792] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.117623] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.117707] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.120497] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.120574] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.123350] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.123420] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.126272] (my_rover) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.126341] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.129129] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.129199] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.132022] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.193755] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.195024] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.195341] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.200747] (-) TimerEvent: {}
+[1.208675] (my_rover) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.216408] (my_rover) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.220086] (my_rover) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.230600] (my_rover) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.259905] (my_rover) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.263633] (my_rover) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.273205] (my_rover) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.299614] (my_rover) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.300825] (-) TimerEvent: {}
+[1.300930] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.301438] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.315158] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.318773] (my_rover) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.328571] (my_rover) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.358383] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.359632] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.359946] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.360095] (my_rover) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.360668] (my_rover) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.361525] (my_rover) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.368458] (my_rover) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.368783] (my_rover) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.369971] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.370285] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.370511] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.372053] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.372328] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.400902] (-) TimerEvent: {}
+[1.433850] (my_rover) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.442664] (my_rover) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.455715] (my_rover) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.483691] (my_rover) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.489030] (my_rover) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.499073] (my_rover) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.500963] (-) TimerEvent: {}
+[1.526909] (my_rover) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.527210] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.527637] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.528077] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.531246] (my_rover) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.531612] (my_rover) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[1.543345] (my_rover) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[1.580472] (my_rover) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[1.590886] (my_rover) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.592486] (my_rover) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.592630] (my_rover) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.601054] (-) TimerEvent: {}
+[1.691364] (my_rover) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.696420] (my_rover) StdoutLine: {'line': b'-- Generating done\n'}
+[1.698603] (my_rover) StdoutLine: {'line': b'-- Build files have been written to: /home/william/karura-2025/ros2_ws/build/my_rover\n'}
+[1.701132] (-) TimerEvent: {}
+[1.708282] (my_rover) CommandEnded: {'returncode': 0}
+[1.708824] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'build'}
+[1.709666] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/william/karura-2025/ros2_ws/build/my_rover', '--', '-j16', '-l16'], 'cwd': '/home/william/karura-2025/ros2_ws/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'william'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/william'), ('OLDPWD', '/home/william/karura-2025/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1841'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'william'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'william'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/william-Alienware-Aurora-Ryzen-Edition-R14:@/tmp/.ICE-unix/1818,unix/william-Alienware-Aurora-Ryzen-Edition-R14:/tmp/.ICE-unix/1818'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac78ca05_a13c_4a72_b005_007ecc7f0359'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/william/karura-2025/ros2_ws/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble')]), 'shell': False}
+[1.751654] (my_rover) CommandEnded: {'returncode': 0}
+[1.752194] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'install'}
+[1.758141] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/william/karura-2025/ros2_ws/build/my_rover'], 'cwd': '/home/william/karura-2025/ros2_ws/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'william'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/william'), ('OLDPWD', '/home/william/karura-2025/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1841'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'william'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'william'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/william-Alienware-Aurora-Ryzen-Edition-R14:@/tmp/.ICE-unix/1818,unix/william-Alienware-Aurora-Ryzen-Edition-R14:/tmp/.ICE-unix/1818'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac78ca05_a13c_4a72_b005_007ecc7f0359'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/william/karura-2025/ros2_ws/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/william/karura-2025/ros2_ws/install/my_rover:/opt/ros/humble')]), 'shell': False}
+[1.762512] (my_rover) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.762837] (my_rover) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.763158] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/urdf/ros2_control.xacro\n'}
+[1.771478] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/urdf/rover.urdf.xacro\n'}
+[1.779031] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/urdf/wheel_macro.xacro\n'}
+[1.787478] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/config/rover_controllers.yaml\n'}
+[1.795658] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/launch/spawn_rover.launch.py\n'}
+[1.801199] (-) TimerEvent: {}
+[1.803699] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/launch/teleop_twist_keyboard_launch.py\n'}
+[1.811798] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover\n'}
+[1.819879] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover\n'}
+[1.828481] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.sh\n'}
+[1.834623] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv\n'}
+[1.840535] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/environment/path.sh\n'}
+[1.846154] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/environment/path.dsv\n'}
+[1.851743] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/local_setup.bash\n'}
+[1.857291] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/local_setup.sh\n'}
+[1.862897] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/local_setup.zsh\n'}
+[1.868446] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/local_setup.dsv\n'}
+[1.873896] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/package.dsv\n'}
+[1.879577] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/ament_index/resource_index/packages/my_rover\n'}
+[1.887258] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake\n'}
+[1.895151] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake\n'}
+[1.900763] (my_rover) StdoutLine: {'line': b'-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/package.xml\n'}
+[1.901260] (-) TimerEvent: {}
+[1.910068] (my_rover) CommandEnded: {'returncode': 0}
+[1.919809] (my_rover) JobEnded: {'identifier': 'my_rover', 'rc': 0}
+[1.920121] (-) EventReactorShutdown: {}

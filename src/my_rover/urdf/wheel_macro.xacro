@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- Wheel macro -->
   <xacro:macro name="wheel_macro" params="prefix parent xyz friction">
     <link name="${prefix}_wheel_link">
       <visual>
@@ -22,9 +21,9 @@
       </collision>
 
       <inertial>
-        <mass value="0.5"/>
+        <mass value="2.0"/>
         <origin xyz="0 0 0"/>
-        <inertia ixx="0.001" iyy="0.001" izz="0.001"
+        <inertia ixx="0.01" iyy="0.01" izz="0.01"
                  ixy="0.0" ixz="0.0" iyz="0.0"/>
       </inertial>
     </link>
@@ -36,13 +35,11 @@
       <axis xyz="0 1 0"/>
     </joint>
 
-    <!-- Gazebo wheel properties -->
     <gazebo reference="${prefix}_wheel_link">
       <mu1>${friction}</mu1>
       <mu2>${friction}</mu2>
       <material>Gazebo/Black</material>
     </gazebo>
-
   </xacro:macro>
 
 </robot>

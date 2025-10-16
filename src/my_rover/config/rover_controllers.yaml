@@ -13,8 +13,8 @@ diff_drive_controller:
     left_wheel_names: ["left_rear_wheel_joint"]
     right_wheel_names: ["right_rear_wheel_joint"]
 
-    wheel_separation: 0.36
-    wheel_radius: 0.10
+    wheel_separation: 0.36        # distance between left and right wheels
+    wheel_radius: 0.10            # wheel radius in meters
 
     publish_rate: 50.0
     cmd_vel_timeout: 0.5
@@ -24,5 +24,4 @@ diff_drive_controller:
     base_frame_id: base_link
     odom_frame_id: odom
 
-    # subscribe to /cmd_vel topic
     cmd_vel_topic: /cmd_vel

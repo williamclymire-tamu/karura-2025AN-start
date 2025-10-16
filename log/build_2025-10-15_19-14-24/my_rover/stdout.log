@@ -117,6 +117,7 @@
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/urdf/wheel_macro.xacro
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/config/rover_controllers.yaml
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/launch/spawn_rover.launch.py
+-- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/launch/teleop_twist_keyboard_launch.py
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover
 -- Symlinking: /home/william/karura-2025/ros2_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.sh
