@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_rover</name>
+  <version>0.1.0</version>
+  <description>My ROS2 rover simulation package</description>
+
+  <maintainer email="you@example.com">William</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>xacro</depend>
+  <depend>gazebo_ros</depend>
+  <depend>ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>robot_state_publisher</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

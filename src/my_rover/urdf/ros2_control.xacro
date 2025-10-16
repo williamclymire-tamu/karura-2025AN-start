@@ -2,24 +2,44 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <ros2_control name="GazeboSystem" type="system">
-    <hardware>
-      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-    </hardware>
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
 
-    <!-- Left wheel -->
-    <joint name="left_rear_wheel_joint">
-      <command_interface name="velocity"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
+  <joint name="left_rear_wheel_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-    <!-- Right wheel -->
-    <joint name="right_rear_wheel_joint">
-      <command_interface name="velocity"/>
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
+  <joint name="right_rear_wheel_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
 
-  </ros2_control>
+<!-- Transmissions (for gazebo_ros2_control) -->
+<transmission name="left_rear_wheel_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_rear_wheel_joint">
+    <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_rear_motor">
+    <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_rear_wheel_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_rear_wheel_joint">
+    <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_rear_motor">
+    <hardwareInterface>hardware_interface/VelocityCommandInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
 
 </robot>

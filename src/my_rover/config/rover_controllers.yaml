@@ -14,11 +14,15 @@ diff_drive_controller:
     right_wheel_names: ["right_rear_wheel_joint"]
 
     wheel_separation: 0.36
-    wheel_radius: 0.10   
+    wheel_radius: 0.10
 
     publish_rate: 50.0
-    use_stamped_vel: false
     cmd_vel_timeout: 0.5
     enable_odom_tf: true
+    use_stamped_vel: false
+
     base_frame_id: base_link
     odom_frame_id: odom
+
+    # subscribe to /cmd_vel topic
+    cmd_vel_topic: /cmd_vel
